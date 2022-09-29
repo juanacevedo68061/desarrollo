@@ -15,5 +15,7 @@ python3-openid
 requests
 requests-oauthlib
 sqlparse
+sphinx
+sphinx_rtd_theme
 tzdata
 urllib3

@@ -12,6 +12,19 @@ def lista(request):
 
 
 def crear(request):
+    """Summary line.
+
+    Extended description of function.
+
+    Args:
+        arg1 (int): Description of arg1
+        arg2 (str): Description of arg2
+
+    Returns:
+        bool: Description of return value
+
+    """
+
     if request.method == "POST":
         form = ProyectoForm(request.POST)
         if form.is_valid():
