@@ -10,7 +10,7 @@ urlpatterns = [
     path('nuevo/', views.crear, name="nuevo"),
     path('proyectos/<int:pk>', views.detalle, name="detalle"),
     path('<int:proyecto_id>/', views.eliminar_proyecto, name="eliminar"),
-    path('usuarios/', include('Usuarios.urls')),
-    path('accounts/', include('allauth.urls')),
-    path('salir/', LogoutView.as_view()),
+    path('usuarios/', include('Usuarios.urls'), name="usuarios"),
+    path('accounts/', include('allauth.urls'), name="accounts"),
+    path('salir/', LogoutView.as_view(), name="salir"),
 ]
